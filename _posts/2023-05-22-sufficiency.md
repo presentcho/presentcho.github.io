@@ -8,12 +8,12 @@ tags: [sufficiency]
 # Sufficiency
 
 ```
-A statistic $T$ is sufficient for $\theta$ if the conditional distribution $x|T$ does not involve $\theta$
+A statistic $$T$$ is sufficient for $$\theta$$ if the conditional distribution $$x|T$$ does not involve $\theta$
 ```
 
 ## How to find sufficient statistic? 
 ### 1. Factorization Theorem
 ```
-A statistic $T(X)$ is a sufficienct statistic for $theta$ if and only if the likelihood can be written as:
-$L(\theta|x) = f(x;\theta) = g(T(x);\theta)h(x)$
+A statistic $$T(X)$$ is a sufficienct statistic for $theta$ if and only if the likelihood can be written as:
+$$L(\theta|x) = f(x;\theta) = g(T(x);\theta)h(x)$$
 ```

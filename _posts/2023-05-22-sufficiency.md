@@ -5,6 +5,8 @@ categories: [Inference, Sufficiency]
 tags: [sufficiency]
 ---
 
+<script type="text/javascript" src="path-to-MathJax/MathJax.js"></script>
+
 # Sufficiency
 
 A statistic $T$ is sufficient for $\theta$ if the conditional distribution $x|T$ does not involve $\theta$

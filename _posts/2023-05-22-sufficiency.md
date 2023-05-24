@@ -8,9 +8,9 @@ math: true
 
 ## Sufficiency
 
-Definition: A statistic $T$ is sufficient for $\theta$ if the conditional distribution $x\|T$ does not involve $\theta$
+**Definition: A statistic $T$ is sufficient for $\theta$ if the conditional distribution $x\|T$ does not involve $\theta$**
 
-**What does the definition mean? 
+What does the definition mean?
 
 The sufficient statistic is a reduction of the data that contains all the evidence of the parameter $\theta$, and $x\|T$ does not depend on $\theta$.
 
@@ -21,11 +21,11 @@ A statistic $T(X)$ is a sufficienct statistic for $\theta$ if and only if the li
 $$L(\theta|x) = f(x;\theta) = g(T(x);\theta)h(x)$$
 
 
-**Example 1: Normal Distribution**
+*Example 1: Normal Distribution*
 
 What is the sufficient statistic for unknown parameter $(\mu, \sigma^2)$ when the random variables $X_1, ..., X_n$ i.i.d $N(\mu, \sigma^2)$?
 
-Solution: 
+*Solution:*
 
 $L_X(\mu, \sigma^2) = f(x_1,..,x_n; \mu, \sigma^2) \approx (\sigma^2)^{-n/2}exp[-\sum_{i=1}^{n}(x_i -\mu)^{2}/2\sigma^2]$
 
@@ -33,12 +33,12 @@ $= (\sigma^2)^{-n/2}exp(-\frac{\sum_{i=1}^{n}(x_i-\bar{x})^{2} + n(\bar{x}-\mu)^
 
 The sample mean and sample variance $(\bar{X}, \sum_{i=1}^{n}(X_i-\bar{X})^{2}/(n-1))$ is the sufficient statistic for $(\mu, \sigma^2)$ 
 
-**Example 2: Uniform distribution **
+*Example 2: Uniform distribution *
 
 What is the sufficient statistic for unknown parameter $(\theta_1, \theta_2)$ given observations $(x_1, ... x_n)$ are i.i.d $Unif(\theta_1, \theta_2)?
 
 
-Solution: 
+*Solution: *
 
 $f(x; \theta_1, \theta_2) = \frac{1}{\theta_2 - \theta_1}I_{\theta_1 \leq x \leq \theta_2}$
 
@@ -49,13 +49,13 @@ $(X_{(1)}, X_{(n)})$ is the sufficient statistic for $(\theta_1, \theta_2)$ wher
 
 ## Rao-Blackwell Theorem 
 
-Definition: Suppose that $T$ is an estimator of $\theta$, and $S$ is sufficient statistic, then $U = E(T\|S)$ is a better estimator because $E(U-\theta)^{2} \leq E(T-\theta)^{2}$ for all $\theta$
+**Definition: Suppose that $T$ is an estimator of $\theta$, and $S$ is sufficient statistic, then $U = E(T\|S)$ is a better estimator because $E(U-\theta)^{2} \leq E(T-\theta)^{2}$ for all $\theta$**
 
-**What does the definition mean? 
+What does the definition mean? 
 
 By conditioning sufficient statistic will reduce the variance (reduce mean square error (MSE)) without having any effect on bias and improve any estimator. 
 
-Proof) 
+*Proof)* 
 
 $E(U - \theta)^{2} = E[E(T\|S)-\theta]^{2} = Var[E(T|S)] + [E(E(T|S))-\theta]^{2}$
 

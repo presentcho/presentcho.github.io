@@ -57,13 +57,13 @@ By conditioning sufficient statistic will reduce the variance (reduce mean squar
 
 *Proof)* 
 
-$E(U - \theta)^{2} = E[E(T\|S)-\theta]^{2} = Var[E(T|S)] + [E(E(T|S))-\theta]^{2}$
+$E(U - \theta)^{2} = E[E(T\|S)-\theta]^{2} = Var[E(T\|S)] + [E(E(T\|S))-\theta]^{2}$
 
 $E(U - \theta)^{2} \leq Var(T) + [E(T)-\theta]^{2} = E(T - \theta)^{2}$
 
 Note that $[E(E(T\|S)) - \theta]^{2} = [E(T)-\theta]^{2}$
 
-$Var[E(T\|S)] = Var(T) - E[Var(T|S)] \leq Var(T)Var(T\|S)$
+$Var[E(T\|S)] = Var(T) - E[Var(T\|S)] \leq Var(T)Var(T\|S)$
 
 
 

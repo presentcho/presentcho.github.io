@@ -27,15 +27,13 @@ What is the sufficient statistic for unknown parameter $(\mu, \sigma^2)$ when th
 
 *Solution:*
 
-$L_X(\mu, \sigma^2) = f(x_1,..,x_n; \mu, \sigma^2) \approx (\sigma^2)^{-n/2}exp[-\sum_{i=1}^{n}(x_i -\mu)^{2}/2\sigma^2]$
-
-$= (\sigma^2)^{-n/2}exp(-\frac{\sum_{i=1}^{n}(x_i-\bar{x})^{2} + n(\bar{x}-\mu)^{2}}{2\sigma^2})$
+$L_X(\mu, \sigma^2) = f(x_1,..,x_n; \mu, \sigma^2) \approx (\sigma^2)^{-n/2}exp[-\sum_{i=1}^{n}(x_i -\mu)^{2}/2\sigma^2] = (\sigma^2)^{-n/2}exp(-\frac{\sum_{i=1}^{n}(x_i-\bar{x})^{2} + n(\bar{x}-\mu)^{2}}{2\sigma^2})$
 
 The sample mean and sample variance $(\bar{X}, \sum_{i=1}^{n}(X_i-\bar{X})^{2}/(n-1))$ is the sufficient statistic for $(\mu, \sigma^2)$ 
 
 *Example 2: Uniform distribution*
 
-What is the sufficient statistic for unknown parameter $(\theta_1, \theta_2)$ given observations $(x_1, ... x_n)$ are i.i.d $Unif(\theta_1, \theta_2)?
+What is the sufficient statistic for unknown parameter $(\theta_1, \theta_2)$ given observations $(x_1, ... x_n)$ are i.i.d $Unif(\theta_1, \theta_2)$?
 
 
 *Solution:*

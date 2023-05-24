@@ -33,12 +33,12 @@ $= (\sigma^2)^{-n/2}exp(-\frac{\sum_{i=1}^{n}(x_i-\bar{x})^{2} + n(\bar{x}-\mu)^
 
 The sample mean and sample variance $(\bar{X}, \sum_{i=1}^{n}(X_i-\bar{X})^{2}/(n-1))$ is the sufficient statistic for $(\mu, \sigma^2)$ 
 
-*Example 2: Uniform distribution *
+*Example 2: Uniform distribution*
 
 What is the sufficient statistic for unknown parameter $(\theta_1, \theta_2)$ given observations $(x_1, ... x_n)$ are i.i.d $Unif(\theta_1, \theta_2)?
 
 
-*Solution: *
+*Solution:*
 
 $f(x; \theta_1, \theta_2) = \frac{1}{\theta_2 - \theta_1}I_{\theta_1 \leq x \leq \theta_2}$
 

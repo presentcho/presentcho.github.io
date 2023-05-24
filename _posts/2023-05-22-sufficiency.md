@@ -3,9 +3,8 @@ title: '[Inference] 01. Sufficiency'
 date: 2023-05-22 17:33:00 +0000
 categories: [Inference, Sufficiency]
 tags: [sufficiency]
+mathjax: true
 ---
-
-<script type="text/javascript" src="path-to-MathJax/MathJax.js"></script>
 
 # Sufficiency
 

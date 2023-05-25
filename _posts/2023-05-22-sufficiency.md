@@ -1,5 +1,5 @@
 ---
-title: '[Inference] 01. Sufficiency and Rao-Blackwell'
+title: '[Inference] Sufficiency and Rao-Blackwell'
 date: 2023-05-22 17:33:00 +0000
 categories: [Inference, Sufficiency]
 tags: [sufficiency]

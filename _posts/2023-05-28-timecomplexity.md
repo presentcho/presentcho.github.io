@@ -6,10 +6,10 @@ math: true
 ---
 
 ## Helpful Resources:
-Introducton to algorithms, third edition: https://mitpress.mit.edu/9780262533058/
+Introduction to algorithms, third edition: https://mitpress.mit.edu/9780262533058/
 
 ## Time complexity 
-To describe the algorithm speed, we use big-$O$ notation and it can be used to compare the spped of two algorithms. 
+To describe the algorithm speed, we use big-$O$ notation and it can be used to compare the speed of two algorithms. 
 
 
 **Definition of Big $O$ notation**
@@ -19,12 +19,12 @@ $$f(n) \leq cg(n)$$,
 
 where $n$ is the input size, $f(n)$ is the time complexity of an algorithm, and $g(n)$ is a function of $n$
 
-The interpretation of definition?
+The interpretation of the definition?
 
-We are interested in the compexlexity with large $n$ and $cg(n)$ is always greater equal than $f(n)$ when $n \geq n_0$
+We are interested in the complexity with large $n$ and $cg(n)$ is always greater equal than $f(n)$ when $n \geq n_0$
 
 **Example**
-Let $f(n) = n +10 $ and we would like to show that upper bound of $f(n)$ is $O(n)$. Let $c = 2$ and $n_0 = 10$. We can denote $f(n) = n + 10$ and $cg(n) = 2n$. 
+Let $f(n) = n +10 $ and we would like to show that the upper bound of $f(n)$ is $O(n)$. Let $c = 2$ and $n_0 = 10$. We can denote $f(n) = n + 10$ and $cg(n) = 2n$. 
 
 By the definition, we satisfy $n + 10 \leq 2n$ when $n \geq 10$. 
 

@@ -13,8 +13,8 @@ math: true
 - (A $\otimes$ B) $\otimes$ C = A $\otimes$ (B $\otimes$ C)
 
 *Multiplication by a scalar*
-- $\alpha$ $\otimes$ B = $\alpha$B
-- ($\alpha$A) $\otimes$ ($\beta$B) = ($\alpha\beta$)(A $\otimes$ B)
+- $\alpha\otimes\text{B}$ = $\alpha\text{B}$
+- ($\alpha\text{A})\otimes(\beta\text{B}) = (\alpha\beta)(\text{A}\otimes\text{B})$
 
 *Multiplication by a matrix*
 - (AB) $\otimes$ C = (AB) $\otimes$ (CI) = (A $\otimes$ C)(B $\otimes$ I) =  (A $\otimes$ C)B

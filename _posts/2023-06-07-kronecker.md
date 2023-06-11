@@ -1,4 +1,3 @@
-
 ---
 title: '[Kronecker] Kronecker Product Cheatsheet'
 date: 2023-06-07 10:20:00 +0000

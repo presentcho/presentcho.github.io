@@ -38,6 +38,7 @@ SHOW FULL COLUMNS FROM 'schema_name'.'table_name';
 SELECT 'id', 'name' FROM 'schema_name'.'table_name'; # specify the column names
 SELECT * FROM 'schema_name'.'table_name'; all columns
 ``
+
 **Insert the data by rows**
 ``
 INSERT INTO 'schema_name'.'table_name' ('id', 'name', 'age') VALUES (1, 'John', 50);
@@ -74,19 +75,19 @@ END AS Binary
 ``
 
 **Range Conditions**
-# returns the specific id values 
 ``
+# returns the specific id values 
 SELECT * FROM 'schema_name'.'table_name' WHERE 'id' IN (1,3); 
 ``
 `IN` and `NOT IN` can be used
 
-# returns within a specific range
 ``
+# returns within a specific range
 SELECT * FROM 'schema_name'.'table_name' WHERE 'id' BETWEEN 1 AND 5;
 ``
 
-# find the patterns
 ``
+# find the patterns
 SELECT * FROM 'schema_name'.'table_name' WHERE name LIKE '%a%'
 ``
 % | matches zero, one, or multiple characters |
@@ -100,7 +101,6 @@ UPDATE 'schema_name'.'table_name' SET 'name' = 'Andy', 'age' = 18 WHERE 'id' = 2
 ## Remove the rows 
 ``
 DELETE FROM 'schema_name'.'table_name' WHERE 'id' = 1;
-
 ``
 
 # Example code

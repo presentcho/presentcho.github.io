@@ -75,19 +75,20 @@ END AS Binary
 ``
 
 **Range Conditions**
+
+**returns the specific id values**
 ``
-# returns the specific id values 
 SELECT * FROM 'schema_name'.'table_name' WHERE 'id' IN (1,3); 
 ``
 `IN` and `NOT IN` can be used
 
+**returns within a specific range**
 ``
-# returns within a specific range
 SELECT * FROM 'schema_name'.'table_name' WHERE 'id' BETWEEN 1 AND 5;
 ``
 
+**find the patterns**
 ``
-# find the patterns
 SELECT * FROM 'schema_name'.'table_name' WHERE name LIKE '%a%'
 ``
 % | matches zero, one, or multiple characters |
@@ -98,6 +99,7 @@ _ | matches only one characters|
 ``
 UPDATE 'schema_name'.'table_name' SET 'name' = 'Andy', 'age' = 18 WHERE 'id' = 2;
 ``
+
 ## Remove the rows 
 ``
 DELETE FROM 'schema_name'.'table_name' WHERE 'id' = 1;

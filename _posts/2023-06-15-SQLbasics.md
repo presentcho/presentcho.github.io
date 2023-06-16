@@ -25,7 +25,9 @@ CREATE Table 'schema_name'.'table_name'(
 );
 ```
 'schema_name'.'table_name' means that which schema the database should creaate the table
+
 PRIMARY KEY('id') define 'id' column as primary key
+
 *Note* that we don't need to use capital letters and we don't need ' ' to specify table and column names
 
 ## Display the columns 
@@ -52,23 +54,27 @@ SELECT * FROM 'schema_name'.'table_name' WHERE 'id' = 1;
 ```
 
 WHERE uses other arithmatic signs such as, `=`, `>`, `<`, `!=`
+
 WHERE name IS NULL # finds the name that contains null value 
+
 IS NULL/ NOT IS NULL
 
 **Important: some database contains null and we want filter NULL**
 
-``
+```
 SELECT * FROM 'schema_name'.'table_name' WHERE IFNULL('age', 0) > 50;
-``
+```
+
 It implies that if it's null then convert null value into 0 and use the condition
 
 **Multiple Conditions**
-``
+```
 SELECT * FROM 'schema_name'.'table_name' WHERE 'age' > 20 AND 'height' < 6;
-``
+```
 Note that `and` and `or` can be used 
 
 **Using the conditions create the column**
+
 For example, if the patients are male and age greater than 50, create column name called binary 0 or 1
 ```
 SELECT GENDER, AGE FROM PATIENTS 
@@ -79,19 +85,19 @@ END AS Binary
 
 **Range Conditions**
 
-**returns the specific id values**
 ```
+#returns the specific id values
 SELECT * FROM 'schema_name'.'table_name' WHERE 'id' IN (1,3); 
 ```
-`IN` and `NOT IN` can be used
+``IN`` and ``NOT IN`` can be used
 
-**returns within a specific range**
 ```
+#returns within a specific range
 SELECT * FROM 'schema_name'.'table_name' WHERE 'id' BETWEEN 1 AND 5;
 ```
 
-**find the patterns**
 ```
+# find the pattern
 SELECT * FROM 'schema_name'.'table_name' WHERE name LIKE '%a%'
 ```
 % | matches zero, one, or multiple characters |

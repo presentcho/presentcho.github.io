@@ -52,9 +52,7 @@ SELECT * FROM 'schema_name'.'table_name' WHERE 'id' = 1;
 ```
 
 WHERE uses other arithmatic signs such as, `=`, `>`, `<`, `!=`
-
 WHERE name IS NULL # finds the name that contains null value 
-
 IS NULL/ NOT IS NULL
 
 **Important: some database contains null and we want filter NULL**
@@ -62,7 +60,6 @@ IS NULL/ NOT IS NULL
 ``
 SELECT * FROM 'schema_name'.'table_name' WHERE IFNULL('age', 0) > 50;
 ``
-
 It implies that if it's null then convert null value into 0 and use the condition
 
 **Multiple Conditions**

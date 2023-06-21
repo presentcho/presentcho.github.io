@@ -115,7 +115,9 @@ UPDATE 'schema_name'.'table_name' SET 'name' = 'Andy', 'age' = 18 WHERE 'id' = 2
 DELETE FROM 'schema_name'.'table_name' WHERE 'id' = 1;
 ```
 
-# If-else statement *case when (condition) then (result) else (result) end;*
+## If-else statement 
+*case when (condition) then (result) else (result) end;*
+
 How to convert all gender from male to female?
 ```
 select employee_id set sex = case sex when 'f' then 'm' else 'f' end;

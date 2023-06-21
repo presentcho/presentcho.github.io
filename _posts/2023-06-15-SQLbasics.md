@@ -49,12 +49,14 @@ SELECT DISTINCT 'name' FROM 'schema_name'.'table_name';
 **Pagination (limit/offset)**
 ```
 select * from 'schema_name'.'table_name' limit 3 offset 1;
-```
+
 Result
 id	name	age	height
 2	  May	30	140
 3 	Tim	25	170
 4	  Jay	60	185
+```
+
 
 `limit` is to indicate how many rows will be presented and `offset` skip a specific number of results. 
 

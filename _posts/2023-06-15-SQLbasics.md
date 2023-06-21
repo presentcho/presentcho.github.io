@@ -41,6 +41,23 @@ SELECT 'id', 'name' FROM 'schema_name'.'table_name'; # specify the column names
 SELECT * FROM 'schema_name'.'table_name'; all columns
 ```
 
+**Obtain unique information (select distinct)** 
+```
+SELECT DISTINCT 'name' FROM 'schema_name'.'table_name';
+```
+
+**Pagination (limit/offset)**
+```
+select * from 'schema_name'.'table_name' limit 3 offset 1;
+```
+Result
+id	name	age	height
+2	  May	30	140
+3 	Tim	25	170
+4	  Jay	60	185
+
+`limit` is to indicate how many rows will be presented and `offset` skip a specific number of results. 
+
 **Insert the data by rows**
 ```
 INSERT INTO 'schema_name'.'table_name' ('id', 'name', 'age') VALUES (1, 'John', 50);
@@ -115,7 +132,7 @@ UPDATE 'schema_name'.'table_name' SET 'name' = 'Andy', 'age' = 18 WHERE 'id' = 2
 DELETE FROM 'schema_name'.'table_name' WHERE 'id' = 1;
 ```
 
-## If-else statement 
+## If-else statement more example 
 *case when (condition) then (result) else (result) end;*
 
 How to convert all gender from male to female?

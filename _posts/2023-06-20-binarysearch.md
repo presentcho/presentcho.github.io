@@ -76,7 +76,7 @@ Binary search is an efficient algorithm used to search for a specific element in
 
 5. Repeat steps 3 and 4 until the desired element is found or the search space is empty (left pointer exceeds right pointer).
 
-### find the target value using binary search algorithm 
+### How to find the target value using binary search algorithm 
 ```
 def binary_search(arr, target):
 	# define the index of left and right 

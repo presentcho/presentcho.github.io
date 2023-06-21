@@ -100,7 +100,9 @@ SELECT * FROM 'schema_name'.'table_name' WHERE 'id' BETWEEN 1 AND 5;
 # find the pattern
 SELECT * FROM 'schema_name'.'table_name' WHERE name LIKE '%a%'
 ```
+
 `%` matches zero, one or multiple characters
+
 `_` matches only one character
 
 ## Update the value

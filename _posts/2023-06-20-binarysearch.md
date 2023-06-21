@@ -102,7 +102,6 @@ Note that the complexity of binary serach is $O(log(n))$
 
 ## When the target is not in the input array and return the index where the target should be inserted
 ```
-```
 def binary_search2(arr, target):
 	# define the index of left and right 
     left, right = 0, len(arr)-1
@@ -121,7 +120,6 @@ def binary_search2(arr, target):
 Result
 print(binary_serach2([2,3,6,8,9], 1))
 0
-```
 ```
 
 ## How to find the target is a square value with binary search?
@@ -156,9 +154,6 @@ class matrix:
 			else:
 				left = mid + 1
 		return len(arr) - left 
-```
-
-**Time complexity $O(m+n)$ and space complexity $O(1)$**
 ```
 
 **Time complexity $O(n+m)$ and space complexity $O(1)$**

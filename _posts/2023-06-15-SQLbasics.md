@@ -69,9 +69,10 @@ id	name	age	height
 ```
 `limit` is to indicate how many rows will be presented and `offset` skip a specific number of results. 
 
-**Group by and aggregate function**
+**Group by**
 ```
 select * from 'schema_name'.'table_name' group by age;
+
 Result
 age
 10
@@ -79,9 +80,35 @@ age
 30
 ```
 
+**Aggregation function (count/sum/avg/min/sum)**
 ### how to count the number of distinct values (count(*))? 
 ```
 select count(*) as frequency, name from 'schema_name'.'table_name' group by name;
+```
+
+### find the min and max values `(min/max)`
+```
+# find the min value
+select min(age) as min_age from 'schema_name'.'table_name';
+# find the max value
+select max(age) as max_age from 'schema_name'.'table_name';
+```
+
+### how to find the average value from the columns `avg`?
+```
+select avg(age) as mean_age from 'schema_name'.'table_name';
+```
+
+### how to find the sum value from the columns `sum`? 
+```
+select sum(age) as sum_age from 'schema_name'.'table_name';
+```
+
+### combine two columns and create a new column `concat`
+```
+select concat('id', '-', 'date') as new_column from 'schema_name'.'table_name';
+# condition for the concat function
+select concat('id', '-', 'date') as new_column from 'schema_name'.'table_name' having new_column like '%a%;
 ```
 
 **Insert the data by rows**

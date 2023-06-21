@@ -6,7 +6,8 @@ math: true
 ---
 
 # Warm-up Questions $O(n)$ complexity
-## How to count the number of array matching with the target?
+
+### How to count the number of array matching with the target?
 ```
 def ex1(arr, target):
 	count = 0
@@ -19,7 +20,7 @@ print(ex2([2,7,9,3,5], 5))
 1
 ```
 
-## How to find the index of array that matches with the target? 
+### How to find the index of array that matches with the target? 
 ```
 def ex2(arr, target):
 	idx = None
@@ -47,7 +48,7 @@ print(ex2([2,7,9,3,5], 5))
 4
 ```
 
-## How to find the target is a square value?
+### How to find the target is a square value?
 ```
 def fun_37(target):
     for i in range(1, target+1):
@@ -75,7 +76,7 @@ Binary search is an efficient algorithm used to search for a specific element in
 
 5. Repeat steps 3 and 4 until the desired element is found or the search space is empty (left pointer exceeds right pointer).
 
-
+### find the target value using binary search algorithm 
 ```
 def binary_search(arr, target):
 	# define the index of left and right 
@@ -98,7 +99,7 @@ print(binary_serach([2,3,6,8,9], 3))
 ```
 Note that the complexity of binary serach is $O(log(n))$
 
-## How to find the target is a square value with binary search?
+### How to find the target is a square value with binary search?
 ```
 def square_binary_serach(arr, target):
     left, right = 1, target

@@ -100,10 +100,8 @@ SELECT * FROM 'schema_name'.'table_name' WHERE 'id' BETWEEN 1 AND 5;
 # find the pattern
 SELECT * FROM 'schema_name'.'table_name' WHERE name LIKE '%a%'
 ```
-|% | matches zero, one, or multiple characters |
-|--|--|
-|_ | matches only one characters|
-
+'%' matches zero, one or multiple characters
+'_' matches only one character
 
 ## Update the value
 ```
@@ -115,7 +113,12 @@ UPDATE 'schema_name'.'table_name' SET 'name' = 'Andy', 'age' = 18 WHERE 'id' = 2
 DELETE FROM 'schema_name'.'table_name' WHERE 'id' = 1;
 ```
 
-# Example code
+# If-else statement *case when (condition) then (result) else (result) end;*
+How to convert all gender from male to female?
+```
+select employee_id set sex = case sex when 'f' then 'm' else 'f' end;
+```
+
 ```
 select employee_id,
 case when employee_id % 2 = 1 and name not like 'M%' then salary

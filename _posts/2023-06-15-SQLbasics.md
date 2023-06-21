@@ -41,6 +41,17 @@ SELECT 'id', 'name' FROM 'schema_name'.'table_name'; # specify the column names
 SELECT * FROM 'schema_name'.'table_name'; all columns
 ```
 
+**Sort the data (order by)**
+```
+select * from 'schema_name'.'table_name' order by age; # acsending order
+# order by ascending
+select * from 'schema_name'.'table_name' order by age ASC;
+# order by descending
+select * from 'schema_name'.'table_name' order by age DESC;
+# muptile column
+select * from 'schema_name'.'table_name' order by name DESC, age ASC;
+```
+
 **Obtain unique information (select distinct)** 
 ```
 SELECT DISTINCT 'name' FROM 'schema_name'.'table_name';
@@ -56,9 +67,22 @@ id	name	age	height
 3 	Tim	25	170
 4	  Jay	60	185
 ```
-
-
 `limit` is to indicate how many rows will be presented and `offset` skip a specific number of results. 
+
+**Group by and aggregate function**
+```
+select * from 'schema_name'.'table_name' group by age;
+Result
+age
+10
+20
+30
+```
+
+### how to count the number of distinct values (count(*))? 
+```
+select count(*) as frequency, name from 'schema_name'.'table_name' group by name;
+```
 
 **Insert the data by rows**
 ```

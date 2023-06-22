@@ -86,6 +86,23 @@ age
 select count(*) as frequency, name from 'schema_name'.'table_name' group by name;
 ```
 
+**Use group by to extract duplicated rows and count**
+```
+select name from 'schema_name'.'table_name' group by name having count(*) >1;
+
+
+Data:
+name
+mike
+mike
+kate
+
+Result:
+name
+mike
+```
+
+
 ### find the min and max values `(min/max)`
 ```
 # find the min value

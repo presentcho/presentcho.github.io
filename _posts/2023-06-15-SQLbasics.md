@@ -146,7 +146,13 @@ WHERE name IS NULL # finds the name that contains null value
 
 IS NULL/ NOT IS NULL
 
-**Important: some database contains null and we want filter NULL**
+**Filter by the character length (length)**
+```
+# To find the rows where the length of the email address is larger than 10, we can use: 
+SELECT * FROM 'schema_name'.'table_name' WHERE length(email) > 10;
+```
+
+**Important: some database contains null and we want filter NULL (ifnull)**
 
 ```
 SELECT * FROM 'schema_name'.'table_name' WHERE IFNULL('age', 0) > 50;

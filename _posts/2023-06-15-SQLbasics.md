@@ -121,6 +121,11 @@ select avg(age) as mean_age from 'schema_name'.'table_name';
 select sum(age) as sum_age from 'schema_name'.'table_name';
 ```
 
+**How to find the total sum of age greater than 50?**
+```
+select sum(age > 50) as sum_age50 from 'schema_name'.'table_name';
+```
+
 ### combine two columns and create a new column `concat`
 ```
 select concat('id', '-', 'date') as new_column from 'schema_name'.'table_name';
@@ -150,6 +155,10 @@ IS NULL/ NOT IS NULL
 ```
 # To find the rows where the length of the email address is larger than 10, we can use: 
 SELECT * FROM 'schema_name'.'table_name' WHERE length(email) > 10;
+```
+**Select the odd numbered IDs**
+```
+SELECT id FROM 'schema_name'.'table_name' WHERE (id % 2 =1 );
 ```
 
 **Important: some database contains null and we want filter NULL (ifnull)**
@@ -187,6 +196,16 @@ SELECT * FROM 'schema_name'.'table_name' WHERE 'id' IN (1,3);
 ```
 #returns within a specific range
 SELECT * FROM 'schema_name'.'table_name' WHERE 'id' BETWEEN 1 AND 5;
+```
+
+**Note that BETWEEN can be applied to dates**
+```
+SELECT * FROM 'schema_name'.'table_name' WHERE visit between start_date and end_date;
+```
+
+**To extract the year and month from the dataset**
+```
+select date_format(date, '%Y-%m) as month from 'schema_name'.'table_name' WHERE visit ;
 ```
 
 ```

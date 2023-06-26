@@ -102,6 +102,11 @@ name
 mike
 ```
 
+```
+# to find the single values
+select nums from 'schema_name'.'table_name' group by num having count(*) = 1;
+```
+group by 1 means group by the first column. 
 
 ### find the min and max values `(min/max)`
 ```
@@ -124,6 +129,11 @@ select sum(age) as sum_age from 'schema_name'.'table_name';
 **How to find the total sum of age greater than 50?**
 ```
 select sum(age > 50) as sum_age50 from 'schema_name'.'table_name';
+```
+
+**How to find cumulative sum?**
+```
+select sum (age) over (id) as cum_age from 'schema_name'.'table_name';
 ```
 
 ### combine two columns and create a new column `concat`

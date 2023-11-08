@@ -20,7 +20,7 @@ where $F$ is the cumulative distribution function of $X$.
 3. $\lim_{x \rightarrow \infty}S(x) = 0$
 
 **Hazard Function**
-$$h(x) = \lim_{\delta \rightarrow 0}\frac{P(x \leq X \leq x + \delta | X \geq x)}{\delta} = \lim_{\delta \rightarrow 0}\frac{P(x \leq X \leq x + \delta(}{\delta P(X \leq x)} = \frac{f(x)}{S(x)}$$
+$$h(x) = \lim_{\delta \rightarrow 0}\frac{P(x \leq X \leq x + \delta | X \geq x)}{\delta} = \lim_{\delta \rightarrow 0}\frac{P(x \leq X \leq x + \delta)}{\delta P(X \leq x)} = \frac{f(x)}{S(x)}$$
 
 - $h(x)$ is the intantaneous death rate at time $x$
 - $h(x)\delta$ approixmate probability of dying in the next $\delta$ units of time given survival to time $x$

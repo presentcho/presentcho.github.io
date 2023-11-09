@@ -1,7 +1,7 @@
 ---
-title: '[Survival Analysis] Intro and Survival Functions'
+title: '[SurvivalAnalysis] Intro and Survival Functions'
 date: 2023-11-08 14:33:00 +0000
-categories: [Survival Analysis, Survival Function]
+categories: [SurvivalAnalysis, SurvivalFunction]
 math: true
 ---
 

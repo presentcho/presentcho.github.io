@@ -1,3 +1,12 @@
+---
+title: '[Machine Learning] Linear Regression'
+date: 2025-03-10 17:33:00 +0000
+categories: [Python, Sklearn]
+tags: [python]
+math: true
+---
+
+
 # **1. Introduction to Linear Regression**
 
 Linear regression is a statistical method that models the relationship between a dependent variable \(y\) and an independent variable \(x\) using a linear equation:
